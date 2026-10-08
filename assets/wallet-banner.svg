@@ -1,0 +1,56 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="20" x2="1130" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090B12"/>
+      <stop offset="0.48" stop-color="#12162A"/>
+      <stop offset="1" stop-color="#090B12"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="330" y1="60" x2="910" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A00">
+        <animate attributeName="stop-color" values="#FF7A00;#7C3AED;#2563EB;#FF7A00" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.52" stop-color="#EC4899">
+        <animate attributeName="stop-color" values="#EC4899;#2563EB;#FF7A00;#EC4899" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#FF7A00;#EC4899;#7C3AED" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <clipPath id="walletClip">
+      <rect x="91" y="91" width="178" height="178" rx="44"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <circle cx="168" cy="175" r="118" fill="#6D28D9" opacity="0.18" filter="url(#glow)">
+    <animate attributeName="r" values="105;128;105" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.12;0.28;0.12" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1045" cy="175" r="105" fill="#F97316" opacity="0.12" filter="url(#glow)">
+    <animate attributeName="r" values="90;122;90" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <g clip-path="url(#walletClip)">
+    <rect x="91" y="91" width="178" height="178" rx="44" fill="url(#accent)"/>
+    <path d="M79 224C118 162 159 141 207 150C247 157 278 184 305 229V286H79V224Z" fill="#0B0D12"/>
+    <path d="M145 202C158 190 171 191 180 201V229H145V202Z" fill="white"/>
+    <path d="M190 202C204 190 216 191 225 201V229H190V202Z" fill="white"/>
+  </g>
+  <rect x="91" y="91" width="178" height="178" rx="44" stroke="white" stroke-opacity="0.14" stroke-width="2"/>
+
+  <text x="320" y="142" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="0.5">Yavuz Selim Durmaz</text>
+  <text x="322" y="193" fill="#B7BED3" font-family="Segoe UI, Arial, sans-serif" font-size="25">Android Developer • My Wallet Creator</text>
+  <rect x="321" y="225" width="390" height="3" rx="1.5" fill="url(#accent)">
+    <animate attributeName="width" values="80;390;80" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="322" y="270" fill="#8892A8" font-family="Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3">TRACK • SAVE • GROW</text>
+
+  <g opacity="0.55">
+    <circle cx="1035" cy="116" r="8" fill="#7C3AED"><animate attributeName="cy" values="116;142;116" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="176" r="6" fill="#EC4899"><animate attributeName="cy" values="176;145;176" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="1010" cy="230" r="5" fill="#F97316"><animate attributeName="cy" values="230;205;230" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
